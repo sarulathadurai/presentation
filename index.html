@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Throttling and Debouncing</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/moon.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<textarea data-template>
+					  ## Throttling and Debouncing
+					</textarea>
+				  </section>
+				  <section data-markdown>
+					<textarea data-template>
+					  ### About me
+
+					  I'm sarulatha Annadurai pursuing CSE ,final year.
+
+					  I started learning web development during this lockdown.
+					  (Definitely the only good that happened in this pandemic!).				  
+					</textarea>
+				  </section>
+				  <section data-markdown data-auto-animate>
+					<textarea data-template>
+						### setTimeout
+						- The setTimeout( ) method sets a timer which executes a function or specified piece of code once the timer expires.
+						-  It returns a timerId.
+					</textarea>
+					<section>
+						<pre>
+							<p>Syntax:</p>
+							<code data-trim data-noescape>
+								var timerId = setTimeout(callback func,delay,arg1,arg2,... )
+							</code>
+						</pre>	
+					</section>
+				  </section>
+					
+				<section data-markdown data-auto-animate>
+					<textarea data-template>
+						### clearTimeout
+						- The clearTimeout() method clears a timer set with the setTimeout() method.
+						- The ID value returned by setTimeout() is used as the parameter for the clearTimeout() method.
+								
+					</textarea>
+				</section>
+				<section>
+					<img src="carbon .png">
+				</section>
+				<section data-markdown data-auto-animate>
+					<textarea data-template>
+						### Why throttling and debouncing
+						- To increase the performance of website
+						- To decrease the load on server caused by rapid function calls to fetch data
+						
+						
+					</textarea>
+				</section>
+	  			<section data-markdown>
+					<textarea data-template>
+					  ### Throttling
+					  Throttling is a technique in which, no matter how many times the user fires the event, the attached function will be executed only once in a given time interval.
+					  <a href="https://codepen.io/sarulatha/pen/XWKPQWv">codepen</a>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+					  ### Debouncing
+					  In debouncing technique, the function attached to the event triggers after certain time only **when the user stops firing the event**.
+					  	
+					  <a href="https://codepen.io/sarulatha/pen/MWeqRbM">codepen</a>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+					  ### Difference between throttling and debouncing
+
+					  #### Throttling	
+					  - Guaranteeing a constant flow of executions every X milliseconds. 
+					  
+					  #### Debouncing
+					  - The debounce technique groups multiple sequential calls into a single one
+
+					  <a href="https://codepen.io/sarulatha/pen/ZEOMZLg">codepen</a>
+					  
+					</textarea>
+				</section>
+				<section data-auto-animate>
+					<h3>Where to use?</h3>  
+					<ul>
+					  <li>Search</li>
+					  <li>Window resize</li>
+					  <li>Scroll</li>
+					</ul>
+				</section>
+
+				<section data-auto-animate>
+					<h3>Where to use?</h3>  
+					<ul>
+						<li>Search - debouncing</li>
+						<li>Window resize - debouncing/throttling</li>
+						<li>Scroll - throttling</li>
+					</ul>
+				</section>
+				
+				<section data-auto-animate>
+					<h2>Thank you for the participation guys</h2>
+					<p>You can connect with me through</p>
+					<ul>
+						<li>
+							<a 
+							href="https://www.linkedin.com/in/sarulatha-annadurai-060226180/"
+							target="_blank"
+							>
+							LinkedIn
+							</a>
+						</li>
+						<li>
+							<a 
+							href="https://twitter.com/sarulathadurai"
+							target="_blank"
+							>
+							Twitter
+							</a>
+						</li>
+					</ul>
+				</section>
+
+				<section data-auto-animate>
+					<h2>Links for your reference</h2>
+					<ul>
+						<li>
+							
+						</li>
+						<li>
+							
+						</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
