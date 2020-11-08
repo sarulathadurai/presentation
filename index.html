@@ -37,21 +37,21 @@
 						- The setTimeout( ) method sets a timer which executes a function or specified piece of code once the timer expires.
 						-  It returns a timerId.
 					</textarea>
-					<section>
-						<pre>
-							<p>Syntax:</p>
-							<code data-trim data-noescape>
-								var timerId = setTimeout(callback func,delay,arg1,arg2,... )
-							</code>
-						</pre>	
-					</section>
 				  </section>
+				  <section>
+					<pre>
+						<p>Syntax:</p>
+						<code data-trim data-noescape>
+							var timerId = setTimeout(callback func,delay,arg1,arg2,... )
+						</code>
+					</pre>	
+				</section>
 					
 				<section data-markdown data-auto-animate>
 					<textarea data-template>
 						### clearTimeout
-						- The clearTimeout() method clears a timer set with the setTimeout() method.
-						- The ID value returned by setTimeout() is used as the parameter for the clearTimeout() method.
+						- The clearTimeout() method clears a timer set with the setTimeout() method
+						- The ID value returned by setTimeout() is used as the parameter for the clearTimeout() method
 								
 					</textarea>
 				</section>
@@ -70,14 +70,15 @@
 	  			<section data-markdown>
 					<textarea data-template>
 					  ### Throttling
-					  Throttling is a technique in which, no matter how many times the user fires the event, the attached function will be executed only once in a given time interval.
+					  Throttling is a technique in which, no matter how many times the user fires the event, the attached function will be executed only once in a given time interval
+
 					  <a href="https://codepen.io/sarulatha/pen/XWKPQWv">codepen</a>
 					</textarea>
 				</section>
 				<section data-markdown>
 					<textarea data-template>
 					  ### Debouncing
-					  In debouncing technique, the function attached to the event triggers after certain time only **when the user stops firing the event**.
+					  In debouncing technique, the function attached to the event triggers after certain time only **when the user stops firing the event**
 					  	
 					  <a href="https://codepen.io/sarulatha/pen/MWeqRbM">codepen</a>
 					</textarea>
@@ -87,7 +88,7 @@
 					  ### Difference between throttling and debouncing
 
 					  #### Throttling	
-					  - Guaranteeing a constant flow of executions every X milliseconds. 
+					  - Guaranteeing a constant flow of executions every X milliseconds
 					  
 					  #### Debouncing
 					  - The debounce technique groups multiple sequential calls into a single one
